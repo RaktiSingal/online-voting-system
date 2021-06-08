@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vote Here</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--javascript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<style>
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#CCCCFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  
+
+ 
+  /* Center and scale the image nicely */
+
+  position: absolute;
+ 
+  margin-left:30%;
+  margin-right:30%;
+  width: 300px;
+  
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+
+ margin-left:35%;
+  width: 300px;
+ 
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=date],input[type=email],input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=date]:focus,input[type=email]:focus,input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.d
+{
+background-color:#9E0000;
+color:white;
+width:100%;
+height:50px;
+padding:5px;
+font-size:20px;
+text-align:center;
+
+}
+</style>
+</head>
+<body>
+<div class="d"><b>Cast Your Vote</b></div>
+
+<form action="vote" method="post" class="container">
+Enter your Voter Card Number:
+<input type="number" placeholder="Voter card Number" name="cardno" required><br>
+<b>Select Party You want to vote:</b><br>
+<select name="party" class="form-item__element form-item__element--select" required> 
+          <option disabled selected value=" ">Please select value</option> 
+               <option>Bahujan Samaj Party(BSP)</option>  
+               <option>Bharatiya Janata Party(BJP)</option>  
+              <option>Communist Party of India</option>
+               <option>Communist Party of India (Marxist)</option> 
+                  <option>Indian National Congress</option> 
+                  <option>All India Trinamool Congress</option> 
+                 <option>Aam Aadmi Party(AAP)</option>  
+                    <option>None of Above</option>
+</select> 
+<br>
+<br>
+<button type="submit" class="btn" name="button">VOTE</button>
+</form>
+
+</body>
+</html>

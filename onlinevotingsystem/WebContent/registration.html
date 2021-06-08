@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--javascript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  margin-left:38%;
+  background-color:#FAF8F8;
+  width: 300px;
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=date],input[type=email],input[type=number],input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus,input[type=date]:focus,input[type=email]:focus,input[type=number]:focus,input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: poinrgb(224, 237, 224) ;
+  opacity: 0.8;
+  margin-left:90px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.o
+{
+background-color:black;
+width:100%;
+height:20%;
+margin-top:0;
+color:white;
+text-shadow:2px 0px red;
+padding:5px;
+text-align:center;
+}
+.r
+{
+text-align:center;
+color:#630000;
+}
+#para
+{
+font-weight:lighter;
+text-align:center;
+}
+</style>
+</head>
+<body>
+
+<div class="o"><h1 style="text-align:center">Online Voting System</h1></div>
+<div class="bg-img">
+  <form action="registration" method="post" class="container">
+    <h1 class="r">Register</h1>
+    
+  <b>Name:</b><br>
+  <input type="text" placeholder="Enter First Name" name="fname" required><span class="validity"></span>
+
+  
+    <b>Voter Card Number:</b><br>
+    <input type="number" placeholder="Enter Voter Card Number" name="cardno" required><span class="validity"></span>
+
+    <b>Contact Number:</b><br>
+    <input type="tel" placeholder="Enter Contact Number" name="cono" required><span class="validity"></span>
+    <br>
+    <b>Address:</b><br>
+    <input type="text" placeholder="Enter Address" name="add" required><span class="validity"></span>
+    
+    <b>Date Of Birth:(YYYY/MM/DD)</b><br>
+    <input type="date" placeholder="Enter Date Of Birth" name="dob" required><span class="validity"></span>
+    
+    <b>Email:</b><br>
+    <input type="email" placeholder="Enter Email address" name="email" required><span class="validity"></span>
+    
+    <b>Enter Pin:</b><br>
+    <input type="password" placeholder="Enter 4 digit Pin to set" name="pin" required><span class="validity"></span>
+<p id="para">**Please remember Card number</p>
+    <button type="submit" class="btn" name="button">Register</button>
+
+  </form>
+</div>
+
+</style>
+</body>
+</html>
